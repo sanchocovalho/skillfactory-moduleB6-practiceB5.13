@@ -79,5 +79,6 @@ def make_russian(artist, albums):
         album_str = "альбома"
     else:
         album_str = "альбомов"
-    return "Список исполнителя " + artist + " состоит из " +\
-    		 str(albums) + " " + album_str + ":<br>"
+    return "<div style='text-align:center;padding-top:20px;'><b>Список исполнителя <span style='color:red;'>"\
+           + artist + "</span> состоит из <b><span style='color:blue;'>" + \
+           str(albums) + " " + album_str + "</span></b>:</div>"
