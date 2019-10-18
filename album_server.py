@@ -23,7 +23,7 @@ def albums(artist):
         # Создаем строку об исполнителе и количестве альбомов в списке
         result = album.make_russian(artist, len(album_names))
         # Объединяем списки в формате "название альбома (год выпуска)"
-        years_albums = ["{} ({})".format(album_names[i], album_years[i]) for i, item in enumerate(album_names)]
+        years_albums = ["{} ({})".format(album_names[i], album_years[i]) for i in range(len(album_names))]
         # Объединяем строки в результат
         result += "<br>".join(years_albums)
         print(result)
