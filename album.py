@@ -50,7 +50,7 @@ def save(year, artist, genre, album):
     """
     Сохраняем запись в базу данных
     """
-    assert isinstance(year, int), "Указано некорректное значение года"
+    assert (year > 1900 and year < 2020), "Указано некорректное значение года"
     assert isinstance(artist, str), "Указано некорректное значение исполнителя"
     assert isinstance(genre, str), "Указано некорректное значение жанра"
     assert isinstance(album, str), "Указано некорректное значение альбома"
